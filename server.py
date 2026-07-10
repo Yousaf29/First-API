@@ -3,8 +3,8 @@ from datetime import datetime, timezone
 
 app = Flask(__name__)
 
-@app.route('/health')
-def health():
+@app.route('/')
+def index():
     return jsonify(status='ok')
 
 @app.route('/api/hello')
